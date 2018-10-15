@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_name">timetable</string>
+
+    <string-array name="Main">
+        <item>Timetable</item>
+
+        <item>Faculty</item>
+        <item>Setting</item>
+
+
+    </string-array>
+    <string-array name="description">
+        <item>Description 1 </item>
+        <item>Description 2 </item>
+        <item>Description 3 </item>
+    </string-array>
+
+    <string-array name="Days">
+        <item>SE</item>
+        <item>TE</item>
+        <item>BE</item>
+
+    </string-array>
+
+    <string-array name="SE">
+        <item>DBMS</item>
+        <item>CN</item>
+        <item>SEPM</item>
+        <item>SDL(T1-SUG),CNL(T3-KH),DBMSL(T2-SAG),SDL(T4-SA)</item>
+        <item>SDL TUT(RT)</item>
+        <item>SDL TUT(DJP)</item>
+    </string-array>
+
+    <string-array name="TE">
+        <item>TOC</item>
+        <item>SEPM</item>
+        <item>CN</item>
+        <item>SDL(T3-SUG),CNL(T4-KH),DBMSL(T1-SAG)</item>
+        <item>SDL(T1-SA),CNL(T2-KH),DBMSL(T3-SAG),SDL(T4-SUG)</item>
+    </string-array>
+
+    <string-array name="BE">
+        <item>TOC</item>
+        <item>DBMS</item>
+        <item>CN</item>
+        <item>CN</item>
+        <item>ISEE</item>
+        <item>CNL(T1-KH),DBMSL(T4-SAG),SDL(T2-SUG)</item>
+    </string-array>
+
+    <string-array name="Thusday">
+        <item>ISEE</item>
+        <item>SEPM</item>
+        <item>DBMS</item>
+        <item>SDL(T2-SA),DBMSL(T4-SAG)</item>
+        <item>SDL(T2-SA),DBMSL(T1-SAG)</item>
+    </string-array>
+
+    <string-array name="Friday">
+        <item>TOC</item>
+        <item>ISEE</item>
+        <item>FREE</item>
+        <item>DBMSL(T3-SAG)</item>
+        <item>DBMSL(T2-SAG)</item>
+    </string-array>
+
+    <string-array name="Saturday">
+        <item>EXTRA CLASS</item>
+        <item>EXTRA CLASS</item>
+        <item>EXTRA CLASS</item>
+
+    </string-array>
+
+
+    <string-array name="Time_1">
+        <item>10:15-11:15</item>
+        <item>11:15-12:15</item>
+        <item>12:15-1:15</item>
+        <item>1:45-3:45</item>
+        <item>3:45-4:45</item>
+        <item>4:45-5:45</item>
+    </string-array>
+
+    <string-array name="Time_2">
+        <item>10:15-11:15</item>
+        <item>11:15-12:15</item>
+        <item>12:15-1:15</item>
+        <item>1:45-3:45</item>
+        <item>3:45-5:45</item>
+
+    </string-array>
+
+    <string-array name="Time_3">
+        <item>10:15-11:15</item>
+        <item>11:15-12:15</item>
+        <item>12:15-1:15</item>
+        <item>1:45-2:45</item>
+        <item>2:45-3:45</item>
+        <item>3:45-5:45</item>
+    </string-array>
+
+    <string-array name="Time_4">
+        <item>10:15-11:15</item>
+        <item>11:15-12:15</item>
+        <item>12:15-1:15</item>
+        <item>1:45-3:45</item>
+        <item>3:45-5:45</item>
+
+    </string-array>
+    <string-array name="Time_5">
+        <item>10:15-11:15</item>
+        <item>11:15-12:15</item>
+        <item>12:15-1:15</item>
+        <item>1:45-3:45</item>
+        <item>3:45-5:45</item>
+
+    </string-array>
+
+    <string-array name="Time_6">
+        <item>10:15-11:15</item>
+        <item>11:15-12:15</item>
+        <item>12:15-1:15</item>
+
+    </string-array>
+</resources>
