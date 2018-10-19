@@ -29,6 +29,7 @@
             android:layout_toRightOf="@+id/ivDayDetail"
             android:text="Subjects"
             android:textColor="#212121"
+            android:fontFamily="cursive"
             android:textSize="15dp" />
 
         <TextView
@@ -39,6 +40,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="18dp"
             android:textColor="#212121"
+            android:fontFamily="cursive"
             android:text="Time" />
 
 

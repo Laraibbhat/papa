@@ -17,16 +17,26 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.example.dheeraj.timetable.TimetableAdapters.Batchtimetable;
 import com.example.dheeraj.timetable.TimetableAdapters.RecyclerviewBE;
 import com.example.dheeraj.timetable.TimetableAdapters.RecyclerviewSE;
 import com.example.dheeraj.timetable.TimetableAdapters.RecyclerviewTE;
+import com.example.dheeraj.timetable.TimetableAdapters.parera;
+import com.example.dheeraj.timetable.TimetableAdapters.parera1;
+import com.example.dheeraj.timetable.TimetableAdapters.parera10;
+import com.example.dheeraj.timetable.TimetableAdapters.parera2;
+import com.example.dheeraj.timetable.TimetableAdapters.parera3;
+import com.example.dheeraj.timetable.TimetableAdapters.parera4;
+import com.example.dheeraj.timetable.TimetableAdapters.parera5;
+import com.example.dheeraj.timetable.TimetableAdapters.parera6;
+import com.example.dheeraj.timetable.TimetableAdapters.parera7;
+import com.example.dheeraj.timetable.TimetableAdapters.parera8;
+import com.example.dheeraj.timetable.TimetableAdapters.parera9;
 import com.example.dheeraj.timetable.Utils.LetterImageView;
 
 //import android.widget.Toolbar;
 
 
-public class days_activity extends AppCompatActivity {
+public class teachertimetable extends AppCompatActivity {
 
     private Toolbar toolbar;
     private ListView listView;
@@ -58,13 +68,13 @@ public class days_activity extends AppCompatActivity {
 
     private void init(){
         setSupportActionBar( toolbar );
-        getSupportActionBar().setTitle("CLASSES");
+        getSupportActionBar().setTitle("Teachertimetable");
         getSupportActionBar().setDisplayHomeAsUpEnabled( true );
 
     }
     private void setupListView(){
-        String[] days=getResources().getStringArray( R.array.Days );
-        DaysAdepter adapter=new DaysAdepter( this,R.layout.activity_days_single_item ,days );
+        String[] days=getResources().getStringArray( R.array.Teacher );
+        DaysAdepter adapter=new DaysAdepter( this,R.layout.activity_teachertimetable ,days );
         listView.setAdapter( adapter );
         listView.setOnItemClickListener( new AdapterView.OnItemClickListener() {
             @Override
@@ -72,25 +82,40 @@ public class days_activity extends AppCompatActivity {
                 switch(position)
                 {
                     case 0: {
-                        startActivity( new Intent( days_activity.this, RecyclerviewSE.class ) );
-                        sharedPreferences.edit().putString( SEL_DAYS, "SE" ).apply();
+                        startActivity( new Intent( teachertimetable.this, parera.class ) );
+                        sharedPreferences.edit().putString( SEL_DAYS, "Parera" ).apply();
                         break;
                     }
-                    case 1:{startActivity( new Intent( days_activity.this,RecyclerviewTE.class ) );
-                        sharedPreferences.edit().putString( SEL_DAYS,"TE" ).apply();
+                    case 1:{startActivity( new Intent( teachertimetable.this,parera1.class ) );
+                        sharedPreferences.edit().putString( SEL_DAYS,"Deshmukh mam" ).apply();
                         break;}
-                    case 2:{startActivity( new Intent( days_activity.this,RecyclerviewBE.class ) );
-                        sharedPreferences.edit().putString( SEL_DAYS,"BE" ).apply();
+                    case 2:{startActivity( new Intent( teachertimetable.this,parera2.class ) );
+                        sharedPreferences.edit().putString( SEL_DAYS,"Deshmukh sir" ).apply();
                         break;}
-                    /*case 3:{startActivity( new Intent( days_activity.this, DaysDetail.class ) );
-                        sharedPreferences.edit().putString( SEL_DAYS,"Thusday" ).apply();
+                    case 3:{startActivity( new Intent( teachertimetable.this, parera3.class ) );
+                        sharedPreferences.edit().putString( SEL_DAYS,"Ghumrai sir" ).apply();
                         break;}
-                    case 4:{startActivity( new Intent( days_activity.this, DaysDetail.class ) );
-                        sharedPreferences.edit().putString( SEL_DAYS,"Friday" ).apply();
+                    case 4:{startActivity( new Intent( teachertimetable.this, parera4.class ) );
+                        sharedPreferences.edit().putString( SEL_DAYS,"Snehal mam" ).apply();
                         break;}
-                    case 5:{startActivity( new Intent( days_activity.this, DaysDetail.class ) );
-                        sharedPreferences.edit().putString( SEL_DAYS,"Saturday" ).apply();
-                        break;}*/
+                    case 5:{startActivity( new Intent( teachertimetable.this, parera5.class ) );
+                        sharedPreferences.edit().putString( SEL_DAYS,"Agarwal" ).apply();
+                        break;}
+                    case 6:{startActivity( new Intent( teachertimetable.this, parera6.class ) );
+                        sharedPreferences.edit().putString( SEL_DAYS,"Surbe mam" ).apply();
+                        break;}
+                    case 7:{startActivity( new Intent( teachertimetable.this, parera7.class ) );
+                        sharedPreferences.edit().putString( SEL_DAYS,"kanchan mam" ).apply();
+                        break;}
+                    case 8:{startActivity( new Intent( teachertimetable.this, parera8.class ) );
+                        sharedPreferences.edit().putString( SEL_DAYS,"Turlai sir" ).apply();
+                        break;}
+                    case 9:{startActivity( new Intent( teachertimetable.this, parera9.class ) );
+                        sharedPreferences.edit().putString( SEL_DAYS,"Air_p" ).apply();
+                        break;}
+                    case 10:{startActivity( new Intent( teachertimetable.this, parera10.class ) );
+                        sharedPreferences.edit().putString( SEL_DAYS,"El_2" ).apply();
+                        break;}
                     default:break;
 
                 }

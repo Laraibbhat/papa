@@ -19,8 +19,22 @@
         <item>SE</item>
         <item>TE</item>
         <item>BE</item>
-
     </string-array>
+
+    <string-array name="Teacher">
+        <item>Parera</item>
+        <item>Deshmukh mam</item>
+        <item>Deshmukh sir</item>
+        <item>Ghumrai sir</item>
+        <item>Snehal mam</item>
+        <item>Agarwal</item>
+        <item>Surbe mam</item>
+        <item>kanchan mam</item>
+        <item>Turlai</item>
+        <item>Air_p</item>
+        <item>El_2</item>
+    </string-array>
+
 
     <string-array name="SE">
         <item>DBMS</item>

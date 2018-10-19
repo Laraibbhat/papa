@@ -24,6 +24,7 @@
             android:text="Timetable"
             android:textAppearance="@color/colorPrimary"
             android:textSize="25sp"
+            android:fontFamily="cursive"
             android:textStyle="bold" />
 
         <TextView
@@ -37,6 +38,7 @@
             android:autoSizeMaxTextSize="25dp"
             android:text="Description"
             android:textAppearance="@color/colorPrimary"
+            android:fontFamily="cursive"
 
 
             android:textSize="12dp" />
@@ -50,6 +52,7 @@
             android:layout_marginLeft="168dp"
             android:layout_marginRight="19dp"
             android:layout_marginTop="20dp"
+            android:fontFamily="cursive"
 
             android:layout_toRightOf="@+id/ivMain"
             android:text="Click Here"

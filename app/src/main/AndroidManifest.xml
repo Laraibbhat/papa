@@ -17,9 +17,31 @@
             </intent-filter>
         </activity>
         <activity android:name=".days_activity" />
-        <activity android:name=".DayDetail" />
         <activity android:name=".DaysDetail" />
+
         <activity android:name=".Recyclerview" />
+        <activity android:name=".TimetableAdapters.RecyclerviewSE" />
+        <activity android:name=".TimetableAdapters.RecyclerviewTE" />
+        <activity android:name=".TimetableAdapters.RecyclerviewBE" />
+        <activity android:name=".DaysDetail$Teachertimetable" />
+        <activity android:name=".TimetableAdapters.BatchtimetableSE" />
+        <activity android:name=".TimetableAdapters.BatchtimetableTE" />
+        <activity android:name=".TimetableAdapters.Batchtimetable" />
+        <activity android:name=".TimetableAdapters.parera" />
+        <activity android:name=".TimetableAdapters.parera1" />
+        <activity android:name=".TimetableAdapters.parera2" />
+        <activity android:name=".TimetableAdapters.parera3" />
+        <activity android:name=".TimetableAdapters.parera4" />
+        <activity android:name=".TimetableAdapters.parera5" />
+        <activity android:name=".TimetableAdapters.parera6" />
+        <activity android:name=".TimetableAdapters.parera7" />
+        <activity android:name=".TimetableAdapters.parera8" />
+        <activity android:name=".TimetableAdapters.parera9" />
+        <activity android:name=".TimetableAdapters.parera10" />
+
+
+
+        <activity android:name=".teachertimetable"></activity>
     </application>
 
 </manifest>

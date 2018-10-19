@@ -71,15 +71,14 @@ public class MainActivity extends AppCompatActivity {
                         startActivity( intent );
                         break;
                     }
-                    case 1:{
+                    case 1:{Intent intent=new Intent( MainActivity.this,teachertimetable.class );
+                        startActivity( intent );
                         break;
                     }
                     case 2:{
                         break;
                     }
-                    case 3:{
-                        break;
-                    }
+
                 }
             }
         } );

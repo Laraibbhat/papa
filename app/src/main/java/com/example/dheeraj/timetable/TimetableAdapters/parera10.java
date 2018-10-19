@@ -1,9 +1,10 @@
-package com.example.dheeraj.timetable;
+package com.example.dheeraj.timetable.TimetableAdapters;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -13,10 +14,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.dheeraj.timetable.R;
 import com.example.dheeraj.timetable.Utils.SeTimetable;
+import com.example.dheeraj.timetable.days_activity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -25,7 +27,7 @@ import com.google.firebase.firestore.QuerySnapshot;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Recyclerview extends AppCompatActivity {
+public class parera10 extends AppCompatActivity {
     RecyclerView recyclerView, recyclerView1, recyclerView2,
             recyclerView3, recyclerView4;
     TextView Automobile,Civil,Comp,Instru,Entc;
@@ -37,7 +39,7 @@ public class Recyclerview extends AppCompatActivity {
 
     public SeTimetable seTimetable;
 
-   private FirebaseDatabase firebaseDatabase;
+    private FirebaseDatabase firebaseDatabase;
 
 
 
@@ -54,7 +56,7 @@ public class Recyclerview extends AppCompatActivity {
         setContentView(R.layout.activity_recyclerview);
 
         firebaseDatabase=FirebaseDatabase.getInstance();
-       // DatabaseReference databaseReference=firebaseDatabase.getReference(firebaseDatabase.ti)
+        // DatabaseReference databaseReference=firebaseDatabase.getReference(firebaseDatabase.ti)
         toolbar = (Toolbar) findViewById(R.id.toolbar);
 
 
@@ -114,7 +116,7 @@ public class Recyclerview extends AppCompatActivity {
 
 
         FirebaseFirestore.getInstance()
-                .collection("TE_Timetable")
+                .collection("PROFESSOR")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
@@ -122,19 +124,19 @@ public class Recyclerview extends AppCompatActivity {
                         if (task.isSuccessful())
                         {
                             List<DocumentSnapshot> mylistofDocuments=task.getResult().getDocuments();
-                            seTimetable=mylistofDocuments.get(2).toObject(SeTimetable.class);
+                            seTimetable=mylistofDocuments.get(5).toObject(SeTimetable.class);
                             ArrayList<String> subject;
                             String[] times={"10:15","11:15","12:15","1:15","1:45","2:45","3:45","4:45"};
 
-                            RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(Recyclerview.this, logosauto, seTimetable.getMon(), "auto",times);
+                            RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(parera10.this, logosauto, seTimetable.getMon(), "auto",times);
                             recyclerView.setAdapter(recyclerViewAdapter);
-                            RecyclerViewAdapter recyclerViewAdapter1 = new RecyclerViewAdapter(Recyclerview.this, logoscivil, seTimetable.getTue(), "civil",times);
+                            RecyclerViewAdapter recyclerViewAdapter1 = new RecyclerViewAdapter(parera10.this, logoscivil, seTimetable.getTue(), "civil",times);
                             recyclerView1.setAdapter(recyclerViewAdapter1);
-                            RecyclerViewAdapter recyclerViewAdapter2 = new RecyclerViewAdapter(Recyclerview.this, logoscomp, seTimetable.getWen(), "comp",times);
+                            RecyclerViewAdapter recyclerViewAdapter2 = new RecyclerViewAdapter(parera10.this, logoscomp, seTimetable.getWen(), "comp",times);
                             recyclerView2.setAdapter(recyclerViewAdapter2);
-                            RecyclerViewAdapter recyclerViewAdapter3 = new RecyclerViewAdapter(Recyclerview.this, logosentc, seTimetable.getThur(), "entc",times);
+                            RecyclerViewAdapter recyclerViewAdapter3 = new RecyclerViewAdapter(parera10.this, logosentc, seTimetable.getThur(), "entc",times);
                             recyclerView3.setAdapter(recyclerViewAdapter3);
-                            RecyclerViewAdapter recyclerViewAdapter4 = new RecyclerViewAdapter(Recyclerview.this, logosinstru, seTimetable.getfri(), "instru",times);
+                            RecyclerViewAdapter recyclerViewAdapter4 = new RecyclerViewAdapter(parera10.this, logosinstru, seTimetable.getfri(), "instru",times);
                             recyclerView4.setAdapter(recyclerViewAdapter4);
                         }
                     }
@@ -194,11 +196,11 @@ public class Recyclerview extends AppCompatActivity {
 
             public ViewHolder(@NonNull View itemView) {
                 super(itemView);
-               // imageList=(ImageView)itemView.findViewById(R.id.ivtimetable);
+                //  imageList=(ImageView)itemView.findViewById(R.id.ivtimetable);
                 Title=(TextView)itemView.findViewById(R.id.tvtimetable);
                 Timee=(TextView)itemView.findViewById(R.id.tvtimetableTime);
 
-          }
+            }
         }
     }
 }

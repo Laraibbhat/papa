@@ -166,4 +166,13 @@ public class DaysDetail extends AppCompatActivity {
             return view;
         }
     }
+
+    public static class Teachertimetable extends AppCompatActivity {
+
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_teachertimetable);
+        }
+    }
 }
